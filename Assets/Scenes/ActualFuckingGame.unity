@@ -343,6 +343,55 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1379840828
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1379840829}
+  - component: {fileID: 1379840830}
+  m_Layer: 0
+  m_Name: spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1379840829
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1379840828}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.87, y: -0.842135, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1379840830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1379840828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bad7865dd83eab49afb78da9e48b522, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Obj:
+  - obstacle: {fileID: 6748023728625681469, guid: f63f203f31ed22b49a7a2270c965bb8b, type: 3}
+    spwnChance: 0.5
+  - obstacle: {fileID: 2056553753959526351, guid: a3dcfc705a6e381418ea722a14ef4042, type: 3}
+    spwnChance: 0.5
 --- !u!1 &1408851086
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,7 +500,7 @@ Transform:
   m_GameObject: {fileID: 1408851086}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.83, y: -1.03, z: 0.006047365}
+  m_LocalPosition: {x: -6.78, y: -1.1, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -514,7 +563,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 608e6f182018902469e623d5f5c1f6c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TheBody: {fileID: 1408851087}
   jumpHeight: 6.25
   downforce: 1.4
 --- !u!1660057539 &9223372036854775807
@@ -524,3 +572,4 @@ SceneRoots:
   - {fileID: 501188081}
   - {fileID: 924546683}
   - {fileID: 1408851089}
+  - {fileID: 1379840829}

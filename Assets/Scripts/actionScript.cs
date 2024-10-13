@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class actionScript : MonoBehaviour
 {
-    public Rigidbody2D TheBody;
+    private Rigidbody2D TheBody;
     public float jumpHeight;
     public float downforce;
+
+    private void Awake()
+    {
+        TheBody = GetComponent<Rigidbody2D>();
+    }
 
     void Update()
     {
